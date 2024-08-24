@@ -24,11 +24,10 @@ type ExerciseList struct {
 
 func main() {
 	app := fiber.New()
-	app.Get("/ex", HandleGetExercises)
-	app.Get("/elist", HandleGetExerciseList)
+	app.Get("/", HandleGetExercises)
+	app.Get("/el", HandleGetExerciseList)
 
 	log.Fatal(app.Listen(":3000"))
-
 }
 
 func HandleGetExercises(c fiber.Ctx) error {
