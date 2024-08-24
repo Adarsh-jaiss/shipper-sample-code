@@ -65,7 +65,7 @@ func generateRandomExerciseList(id int) ExerciseList {
 }
 
 func generateExerciseDummyData() []Exercise {
-	exercises := make([]Exercise, 100)
+	exercises := make([]Exercise, 101)
 	for i := 1; i < 101; i++ {
 		exercises[i] = generateRandomExercise(i)
 
@@ -75,8 +75,8 @@ func generateExerciseDummyData() []Exercise {
 }
 
 func generateExerciseListDummyData() []ExerciseList {
-	exerciseLists := make([]ExerciseList, 100)
-	for i := 0; i < 101; i++ {
+	exerciseLists := make([]ExerciseList, 101)
+	for i := 1; i < 101; i++ {
 		exerciseLists[i] = generateRandomExerciseList(i)
 	}
 
