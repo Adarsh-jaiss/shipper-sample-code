@@ -1,6 +1,6 @@
 module github.com/adarsh-jaiss/shipper-sample-code
 
-go 1.22.1
+go 1.21
 
 require github.com/gofiber/fiber/v3 v3.0.0-beta.3
 
